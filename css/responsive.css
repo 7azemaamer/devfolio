@@ -1,0 +1,263 @@
+/*Responsive website*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    nav ul li:not(.dropdown , .dropdown-item) a:hover::after{
+        animation: none;
+    }
+    nav ul li:not(.dropdown, .dropdown-item) a:not(:hover)::after {
+        animation: none;
+    }
+    .about .card {
+        flex-direction: column !important;
+    }
+    .about .card .left{
+        width: 90% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .about .card .left .res-image{
+        width: 100%;
+    }
+    .about .card .card-text{
+        margin-top: 10px;
+    }
+    .about .card .col-md-8 p span{
+        padding: 0 !important;
+    }
+    .left .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-title{
+        font-weight: bold;
+    }
+    .about .left , .about .right {
+        padding-left: 20px !important;
+    }
+    .about .right{
+        width: 100% !important;
+    }
+    .about .right .text{
+        width: 100%;
+    }
+    .services .row:has(.col-4){
+        flex-direction: column !important;
+    }
+    .services .row:has(.col-4) .col-4{
+        width: 100%;
+    }
+    .stats .col-3{
+        width: 100%;
+    }
+    .portfolio .row.row:has(.col-4) .col-4 .card{
+        width: 100% !important;
+    }
+    .portfolio .row .col-4{
+        width: 100%;
+    }
+    .portfolio .row .col-4 .card-body .text{
+        flex-grow: 2;
+    }
+    .portfolio .row .col-4 .card-body .icon-circle{
+        margin-right: 5px;
+    }
+    .rates .carousel-caption{
+        padding: 1px !important;
+    }
+    .rates .carousel-inner{
+        padding-top: 150px !important;
+    }
+    .rates{
+        margin-bottom: 50px;
+    }
+    .blog .row:has(.col-4){
+        gap: 5 !important;
+        margin: 50px 0;
+    }
+    .blog .row .col-4 , .blog .row .col-4 .card{
+        width: 100% !important;
+
+    }
+    .contact {
+        padding: 20px;
+    }
+    .contact .content-box{
+        flex-direction: column !important;
+        margin: 10px 10px 0 10px;
+        padding: 20px;
+    }
+    .contact .content-box .left , .contact .content-box .right{
+        width: 100% !important;
+        padding-left:10px !important ;
+    }
+    .contact .content-box .left {
+        margin-bottom: 50px;
+    }
+    .contact .content-box .right .row:has(.col){
+        display: flex !important;
+        
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about .card {
+        flex-direction: column !important;
+    }
+    .about .card .left{
+        width: 90% !important;
+    }
+    .about .card .left .res-image{
+       padding-top: 12px;
+    }
+    .about .card .card-text{
+        margin-top: 10px;
+    }
+    .about .card .col-md-8 p span{
+        padding: 0 !important;
+    }
+    .about .right{
+        width: 100% !important;
+    }
+    .about .card .row:has(img){
+        flex-direction: row !important;
+    }
+
+    .services .row:has(.col-4){
+        flex-direction: row !important;
+    }
+    .services .row:has(.col-4) .col-4{
+        width:50%;
+    }
+
+
+    .portfolio .row.row:has(.col-4) .col-4 .card{
+        width: 100% !important;
+    }
+    .portfolio .row .col-4{
+        width: 50%;
+    }
+    .portfolio .row .col-4 .card-body .text{
+        flex-grow: 2;
+    }
+    .portfolio .row .col-4 .card-body .icon-circle{
+        margin-right: 5px;
+    }
+
+    .stats .col-3{
+        width: 50%;
+    }
+
+    .rates .carousel-caption{
+        padding: 1px !important;
+    }
+    .rates .carousel-inner{
+        padding-top: 150px !important;
+    }
+    .rates{
+        margin-bottom: 50px;
+    }
+    .blog .row:has(.col-4){
+        gap: 5 !important;
+        margin: 50px 0;
+
+    }
+    .blog .row .col-4{
+        width: calc(50% - 8px) !important;
+    }
+    .blog .row .col-4 .card{
+        width: 100% !important;
+    }
+    .blog .row .col-4 .card-title{
+        font-size: 110%;
+    }
+
+    .contact {
+        padding: 20px;
+    }
+    .contact .content-box{
+        flex-direction: column !important;
+        margin: 10px 10px 0 10px;
+        padding: 20px;
+    }
+    .contact .content-box .left , .contact .content-box .right{
+        width: 100% !important;
+        padding-left:10px !important ;
+    }
+    .contact .content-box .left {
+        margin-bottom: 50px;
+    }
+    .contact .content-box .right .row:has(.col){
+        display: flex !important;
+        justify-content: center !important;
+        
+    }
+    .contact .content-box .right .row .col{
+        justify-content: center !important;
+        display: flex !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .about .card {
+        flex-direction: row !important;
+    }
+    .about .card .left , .about .card .right{
+        width: 50% !important;
+    }
+    .about .card .left .card-body{
+        padding-left: 20px !important;
+    }
+    .rates .carousel-inner{
+        padding: 50px !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .contact .content-box{
+        flex-direction: row !important
+    }
+    .contact .content-box .right{
+        padding-left: 20px !important;
+    }
+    .contact .content-box .right .row:has(.col){
+        display: inline-flex !important;
+    }
+    .services .row:has(.col-4){
+        flex-direction: row !important;
+    }
+    .services .row:has(.col-4) .col-4{
+        width: 33.3333%;
+    }
+    .stats .col-3{
+        width: 25%;
+    }
+
+    .portfolio .row:has(.card){
+        justify-content: center;
+    }
+
+    .portfolio .row .col-4{
+        width: 26rem;
+        justify-content: center;
+    }
+    .portfolio .row .col-4 .card-body .text{
+        flex-grow: 2;
+    }
+    .portfolio .row .col-4 .card-body .icon-circle{
+        margin-right: 5px;
+    }
+    .blog .row .col-4{
+        width: calc(33.3333% - 11px) !important;
+    }
+    .blog .row .col-4 .card{
+        width: 100% !important;
+    }
+    .blog .row .col-4 .card-title{
+        font-size: 110%;
+    }
+}
